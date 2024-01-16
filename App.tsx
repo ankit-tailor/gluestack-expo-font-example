@@ -1,4 +1,4 @@
-import { SafeAreaView } from "react-native";
+import { SafeAreaView, Text as RNText } from "react-native";
 import {
   Box,
   Text,
@@ -9,6 +9,7 @@ import {
   Link,
   LinkText,
 } from "@gluestack-ui/themed";
+import { myConfig } from "./gluestack-ui.config";
 
 import {
   useFonts,
@@ -17,21 +18,29 @@ import {
   Almarai_700Bold,
   Almarai_800ExtraBold,
 } from "@expo-google-fonts/almarai";
-import { config } from "./gluestack-ui.config";
 
 const Example = () => {
-  const [fontsLoaded] = useFonts({
+  let [fontsLoaded] = useFonts({
     Almarai_300Light,
     Almarai_400Regular,
     Almarai_700Bold,
     Almarai_800ExtraBold,
   });
 
+  let fontSize = 24;
+  let paddingVertical = 6;
+
   if (!fontsLoaded) {
-    return <Text>Loading</Text>;
+    return <RNText>Loading</RNText>;
   } else {
     return (
-      <Box flex={1} justifyContent="center" px={4} bg="$backgroundLight0">
+      <Box
+        h="100%"
+        justifyContent="center"
+        px={4}
+        bg="$backgroundLight0"
+        $web-minHeight="100vh"
+      >
         <VStack alignItems="center" space="lg">
           <Image
             source={require("./assets/gluestack-ui-logo.png")}
@@ -62,7 +71,7 @@ const Example = () => {
 export default function App() {
   return (
     <SafeAreaView>
-      <GluestackUIProvider config={config}>
+      <GluestackUIProvider config={myConfig}>
         <Example />
       </GluestackUIProvider>
     </SafeAreaView>

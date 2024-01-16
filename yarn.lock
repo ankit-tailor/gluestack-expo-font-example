@@ -1567,10 +1567,10 @@
   resolved "https://registry.yarnpkg.com/@gluestack-style/legend-motion-animation-driver/-/legend-motion-animation-driver-1.0.3.tgz#e2408ff8515ced92cb75f096f5eeff1f9636a0da"
   integrity sha512-sD6aFS6Tq5XpyjrboFEIc8LrRY4TA4kodFYHzk6mDchvbkdLODijtjnaDQB1UqihOkMRg49e7ANRAOzc7eymaQ==
 
-"@gluestack-style/react@^1.0.40":
-  version "1.0.40"
-  resolved "https://registry.yarnpkg.com/@gluestack-style/react/-/react-1.0.40.tgz#21e2d1c97b2bf87602c9894f411b1acaf7460cd7"
-  integrity sha512-7yF0vy4aDWd7hc87v9afm/uQ2SnAk0u3XDYzc5qw72cG6u3OhvyaBoTs8nxfw1gRKi+Hu2MAYp5hOOwA0e3/cA==
+"@gluestack-style/react@1.0.41":
+  version "1.0.41"
+  resolved "https://registry.yarnpkg.com/@gluestack-style/react/-/react-1.0.41.tgz#84f143990f8311b4a851f6c0c8f4ae122b7a8018"
+  integrity sha512-07sG6AmtcoLOYlicnJ1hqC7w3i8SMH4YBFjFSy0nb7Xjawvv9iDkYSrI8kFNph+zJWWrd8dS0RM6e1DCdqLlhQ==
   dependencies:
     inline-style-prefixer "^6.0.1"
     normalize-css-color "^1.0.2"
@@ -1874,7 +1874,7 @@
     "@gluestack-ui/utils" "^0.1.12"
     "@react-native-aria/focus" "^0.2.9"
 
-"@gluestack-ui/themed@^1.0.36":
+"@gluestack-ui/themed@1.0.36":
   version "1.0.36"
   resolved "https://registry.yarnpkg.com/@gluestack-ui/themed/-/themed-1.0.36.tgz#2710e7b919d923a6df31142e22b25f56846915f0"
   integrity sha512-YrIwxf03sUgaeqKrINP9BXWakw3lH7bR6XYb58Ugs6922AZ+xqQfwmoyG6ksHR4MI3fNx2W4nKDjJ7KwTTN46A==
@@ -4240,7 +4240,12 @@ caniuse-api@^3.0.0:
     lodash.memoize "^4.1.2"
     lodash.uniq "^4.5.0"
 
-caniuse-lite@^1.0.0, caniuse-lite@^1.0.30001565:
+caniuse-lite@^1.0.0:
+  version "1.0.30001577"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001577.tgz#a24991eb4ad67324ba8b96716340d53151f2f6f8"
+  integrity sha512-rs2ZygrG1PNXMfmncM0B5H1hndY5ZCC9b5TkFaVNfZ+AUlyqcMyVIQtc3fsezi0NUCk5XZfDf9WS6WxMxnfdrg==
+
+caniuse-lite@^1.0.30001565:
   version "1.0.30001576"
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001576.tgz#893be772cf8ee6056d6c1e2d07df365b9ec0a5c4"
   integrity sha512-ff5BdakGe2P3SQsMsiqmt1Lc8221NR1VzHj5jXN5vBny9A6fpze94HiVV/n7XRosOlsShJcvMv5mdnpjOGCEgg==
